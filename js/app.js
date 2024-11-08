@@ -13,6 +13,8 @@ const btnReset = document.querySelector(".btnReset");
 
 const message = document.querySelector(".message");
 
+const containerText = document.querySelector(".container__text");
+
 // !EVENTS LISTENER & !FUNCTION
 
 fName.addEventListener("input", function (e) {
@@ -25,11 +27,11 @@ isMarried.addEventListener("input", function (e) {
   isMarriedText.innerHTML = `😘 Is married: ${e.target.value}`;
 });
 
-
 btnSubmit.addEventListener("click", function () {
   message.innerHTML = "Successful send! ✅";
 });
 
 btnReset.addEventListener("click", function () {
-  message, (innerHTML = "Unsuccessful, try again! 😓");
+  containerText.innerHTML = "";
+  message.innerHTML = "Unsuccessful, try again! 😓";
 });
