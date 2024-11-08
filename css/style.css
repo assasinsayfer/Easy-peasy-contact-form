@@ -42,6 +42,33 @@ body {
 .btns .btnSubmit {
     background-color: green;
 }
+
 .btns .btnReset {
     background-color: #ff0000;
+}
+
+.container__text {
+    width: 100%;
+    border: 1px solid #909090;
+    border-top: none;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.container__text p {
+    font-size: 28px;
+    margin-top: 50px;
+    font-family: monospace;
+}
+
+.message {
+    animation-name: anim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anim {
+    50% {
+        transform: translateX(250px);
+    }
 }
